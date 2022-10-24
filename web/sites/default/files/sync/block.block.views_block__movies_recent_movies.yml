@@ -1,0 +1,29 @@
+uuid: 194a7ad0-1a48-4008-8551-b5709d22daa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: views_block__movies_recent_movies
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:movies-recent_movies'
+settings:
+  id: 'views_block:movies-recent_movies'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

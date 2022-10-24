@@ -1,0 +1,74 @@
+uuid: 93cbf923-13cf-4856-8753-3fd5ad2858c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+    - views.view.movies
+    - views.view.reviews
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f40407cf-8c4b-457e-b6e7-eb97b416af4a:
+            uuid: f40407cf-8c4b-457e-b6e7-eb97b416af4a
+            region: content
+            configuration:
+              id: 'extra_field_block:node:landing_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          68d25bc9-b555-4a21-acca-c87c04b11f22:
+            uuid: 68d25bc9-b555-4a21-acca-c87c04b11f22
+            region: content
+            configuration:
+              id: 'views_block:movies-recent_movies'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          028517d7-899d-412a-9f82-182a9757a948:
+            uuid: 028517d7-899d-412a-9f82-182a9757a948
+            region: content
+            configuration:
+              id: 'views_block:reviews-lastest_reviews'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

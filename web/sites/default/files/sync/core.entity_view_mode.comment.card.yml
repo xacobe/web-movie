@@ -1,0 +1,10 @@
+uuid: e6c59e70-81ba-4c69-877f-de17767d39de
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.card
+label: Card
+targetEntityType: comment
+cache: true

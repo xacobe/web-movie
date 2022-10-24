@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.movie.field_netflix
     - field.field.node.movie.field_plot
     - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_reviews
     - field.field.node.movie.field_tags
     - field.field.node.movie.field_trailer
     - node.type.movie
   module:
+    - comment
     - datetime
     - link
     - media_library
@@ -82,6 +84,12 @@ content:
   field_release_date:
     type: datetime_default
     weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reviews:
+    type: comment_default
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

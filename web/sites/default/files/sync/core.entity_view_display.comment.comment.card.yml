@@ -1,18 +1,19 @@
-uuid: 7b344ba9-0fee-4d16-bf8b-2e3605dfd53e
+uuid: ead91682-3533-4c54-ba77-3097f4c1e5ac
 langcode: es
 status: true
 dependencies:
   config:
     - comment.type.comment
+    - core.entity_view_mode.comment.card
     - field.field.comment.comment.comment_body
   module:
     - text
 _core:
   default_config_hash: aBQUGsQ46M4048fIlFuTXwl2zV0j2cJX89CTUobh9hA
-id: comment.comment.default
+id: comment.comment.card
 targetEntityType: comment
 bundle: comment
-mode: default
+mode: card
 content:
   comment_body:
     type: text_default
@@ -21,10 +22,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
   langcode: true
+  links: true
