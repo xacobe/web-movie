@@ -1,0 +1,8 @@
+uuid: 45bc47c7-a566-46db-bd1d-b4fae0087910
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorías noticias'
+vid: news_sections
+description: ''
+weight: 0

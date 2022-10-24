@@ -1,0 +1,11 @@
+uuid: 98e9ebe9-29c3-4200-9b6f-085dd53503bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_sections
+id: taxonomy_term.news_sections
+target_entity_type_id: taxonomy_term
+target_bundle: news_sections
+default_langcode: site_default
+language_alterable: false

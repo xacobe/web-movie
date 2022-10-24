@@ -1,0 +1,29 @@
+uuid: a70f22b8-26b1-4370-8c4b-bdd007f2bd61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movies_sections
+    - node.type.article
+    - taxonomy.vocabulary.news_sections
+id: node.article.field_movies_sections
+field_name: field_movies_sections
+entity_type: node
+bundle: article
+label: 'Categoría peliculas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_sections: news_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
