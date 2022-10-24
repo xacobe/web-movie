@@ -1,0 +1,21 @@
+uuid: 0e71e872-b4a6-4806-a4c9-99687d577b81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot
+    - node.type.movie
+  module:
+    - text
+id: node.movie.field_plot
+field_name: field_plot
+entity_type: node
+bundle: movie
+label: Plot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

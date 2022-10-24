@@ -1,0 +1,19 @@
+uuid: e9793b9c-c05c-4dff-8b5b-e43e3fe17d32
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_in_cinemas
+field_name: field_in_cinemas
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

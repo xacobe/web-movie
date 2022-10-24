@@ -1,0 +1,47 @@
+uuid: 4acaa8a6-60a7-4091-ae41-d4094b64e5aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.body
+    - field.field.node.movie.field_buy_on_dev
+    - field.field.node.movie.field_cover
+    - field.field.node.movie.field_in_cinemas
+    - field.field.node.movie.field_netflix
+    - field.field.node.movie.field_plot
+    - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_tags
+    - field.field.node.movie.field_trailer
+    - node.type.movie
+  module:
+    - text
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_buy_on_dev: true
+  field_cover: true
+  field_in_cinemas: true
+  field_netflix: true
+  field_plot: true
+  field_release_date: true
+  field_tags: true
+  field_trailer: true
+  langcode: true
