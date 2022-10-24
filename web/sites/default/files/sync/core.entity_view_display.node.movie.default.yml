@@ -80,7 +80,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 110
     region: content
   field_release_date:
     type: datetime_default

@@ -1,4 +1,4 @@
-uuid: 8367b8ed-9b5b-44bc-82db-522e635870a5
+uuid: b7679b30-72e7-4647-b2d4-a1c0ea92f2cf
 langcode: es
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.field_plot
 field_name: field_plot
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1
