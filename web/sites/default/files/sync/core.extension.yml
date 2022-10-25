@@ -55,9 +55,22 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
+  webform: 0
+  webform_attachment: 0
+  webform_devel: 0
+  webform_image_select: 0
+  webform_node: 0
+  webform_options_custom: 0
+  webform_options_limit: 0
+  webform_ui: 0
+  webform_bootstrap: 1
   views: 10
   standard: 1000
 theme:
   olivero: 0
   claro: 0
+  stable: 0
+  classy: 0
+  bootstrap5: 0
 profile: standard

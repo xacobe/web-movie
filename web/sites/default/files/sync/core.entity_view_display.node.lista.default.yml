@@ -1,0 +1,29 @@
+uuid: 1d73fffa-5665-4693-a52a-a887ad0f8ba1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.lista.field_movies_list
+    - node.type.lista
+  module:
+    - user
+id: node.lista.default
+targetEntityType: node
+bundle: lista
+mode: default
+content:
+  field_movies_list:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

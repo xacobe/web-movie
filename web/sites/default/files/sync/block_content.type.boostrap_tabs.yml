@@ -1,0 +1,8 @@
+uuid: c1e3ddc4-8631-4580-bbcc-c71808601bea
+langcode: es
+status: true
+dependencies: {  }
+id: boostrap_tabs
+label: 'Boostrap tabs'
+revision: 0
+description: ''

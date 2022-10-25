@@ -1,0 +1,50 @@
+uuid: 703aa3a9-2f9e-4c24-bc4b-2b67aeac6d10
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.boostrap_tabs
+    - field.storage.block_content.field_referencia
+  module:
+    - viewsreference
+id: block_content.boostrap_tabs.field_referencia
+field_name: field_referencia
+entity_type: block_content
+bundle: boostrap_tabs
+label: Referencia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    media_library: 0
+    movies: 0
+    noticias: 0
+    reviews: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

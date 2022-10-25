@@ -1,0 +1,23 @@
+uuid: de932c3b-7bb9-427c-b988-10c867aed072
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lista.field_movies_list
+    - node.type.lista
+  module:
+    - user
+id: node.lista.teaser
+targetEntityType: node
+bundle: lista
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movies_list: true
+  langcode: true

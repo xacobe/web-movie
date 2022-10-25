@@ -22,6 +22,8 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/devel": "^5.0",
+        "drupal/viewsreference": "^1.8",
+        "drupal/webform": "^6.1",
         "drush/drush": "^11.3"
     },
     "conflict": {
