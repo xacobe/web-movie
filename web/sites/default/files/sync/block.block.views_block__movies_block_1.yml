@@ -1,0 +1,25 @@
+uuid: 6d8abec0-501e-4476-8da8-3e64db17a3fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - views
+  theme:
+    - bootstrap5
+id: views_block__movies_block_1
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:movies-block_1'
+settings:
+  id: 'views_block:movies-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

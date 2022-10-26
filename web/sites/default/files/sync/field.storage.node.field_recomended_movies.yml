@@ -1,0 +1,19 @@
+uuid: 95d1f2bb-341a-4ade-b8f7-5452766a8fe7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_recomended_movies
+field_name: field_recomended_movies
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

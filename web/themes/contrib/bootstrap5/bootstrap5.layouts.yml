@@ -1,0 +1,12 @@
+card:
+  label: 'Card'
+  category: 'My Layouts'
+  template: templates/card
+  default_region: image
+  regions:
+    main:
+      label: Main
+    cover:
+      label: Cover
+  icon_map:
+  - [square_one, square_two, square_two]

@@ -1,0 +1,217 @@
+uuid: 9ce97780-784a-4a80-8b5f-2e91f4c7e3d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.card
+    - field.field.node.movie.body
+    - field.field.node.movie.field_buy_on_dev
+    - field.field.node.movie.field_cover
+    - field.field.node.movie.field_in_cinemas
+    - field.field.node.movie.field_netflix
+    - field.field.node.movie.field_plot
+    - field.field.node.movie.field_recomended_movies
+    - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_reviews
+    - field.field.node.movie.field_tags
+    - field.field.node.movie.field_trailer
+    - node.type.movie
+  module:
+    - comment
+    - datetime
+    - layout_builder
+    - link
+    - text
+    - user
+  theme:
+    - bootstrap5
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: card
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          16341b96-5a47-411f-b7b0-ed9347d241d5:
+            uuid: 16341b96-5a47-411f-b7b0-ed9347d241d5
+            region: cover
+            configuration:
+              id: 'field_block:node:movie:field_cover'
+              label: Portada
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9e738c2e-d7ee-4369-b554-521722379af1:
+            uuid: 9e738c2e-d7ee-4369-b554-521722379af1
+            region: main
+            configuration:
+              id: 'field_block:node:movie:body'
+              label: Review
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: visually_hidden
+                settings:
+                  trim_length: 150
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ed69ed32-525b-4800-97ec-216776c93ae1:
+            uuid: ed69ed32-525b-4800-97ec-216776c93ae1
+            region: main
+            configuration:
+              id: 'field_block:node:movie:field_tags'
+              label: Etiquetas
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.card
+targetEntityType: node
+bundle: movie
+mode: card
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_buy_on_dev:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_in_cinemas:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_netflix:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_plot:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_recomended_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_reviews:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_trailer:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

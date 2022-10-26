@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_movies_sections
+    - field.field.node.article.field_tags
     - node.type.article
   module:
     - user
@@ -26,4 +27,6 @@ hidden:
   comment: true
   field_image: true
   field_movies_sections: true
+  field_tags: true
   langcode: true
+  search_api_excerpt: true

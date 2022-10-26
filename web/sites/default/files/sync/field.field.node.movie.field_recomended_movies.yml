@@ -1,0 +1,28 @@
+uuid: 344abd33-19fa-4cc5-a078-f54b0e91a888
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recomended_movies
+    - node.type.movie
+id: node.movie.field_recomended_movies
+field_name: field_recomended_movies
+entity_type: node
+bundle: movie
+label: 'Películas recomendadas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movie: movie
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.movie.field_in_cinemas
     - field.field.node.movie.field_netflix
     - field.field.node.movie.field_plot
+    - field.field.node.movie.field_recomended_movies
     - field.field.node.movie.field_release_date
     - field.field.node.movie.field_reviews
     - field.field.node.movie.field_tags
@@ -18,9 +19,229 @@ dependencies:
   module:
     - comment
     - datetime
+    - layout_builder
+    - layout_discovery
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          39cdc4e7-32ea-4273-8cfb-cc9f19276a7c:
+            uuid: 39cdc4e7-32ea-4273-8cfb-cc9f19276a7c
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_release_date'
+              label: 'Fecha de lanzamiento'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          38d12ae2-4b4e-46df-b30d-453314961ac3:
+            uuid: 38d12ae2-4b4e-46df-b30d-453314961ac3
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_buy_on_dev'
+              label: 'Comprar en DVD'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          e22954d7-1bb9-4a40-9eec-b3e301665979:
+            uuid: e22954d7-1bb9-4a40-9eec-b3e301665979
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_in_cinemas'
+              label: 'En el cine'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          266df750-bccc-4a0b-9f68-07aeeb59ad03:
+            uuid: 266df750-bccc-4a0b-9f68-07aeeb59ad03
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_buy_on_dev'
+              label: 'Comprar en DVD'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          3103256b-e895-412b-9602-e45221759680:
+            uuid: 3103256b-e895-412b-9602-e45221759680
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_netflix'
+              label: Netflix
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          e8809dbf-b042-4e68-8bed-6ed4d25c16fd:
+            uuid: e8809dbf-b042-4e68-8bed-6ed4d25c16fd
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_cover'
+              label: Portada
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: above
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d12b76d9-e07b-4948-99ff-d209570827ba:
+            uuid: d12b76d9-e07b-4948-99ff-d209570827ba
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_plot'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: above
+                settings:
+                  trim_length: 200
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          7d273f22-b805-440e-a20a-8341bf5cb5cb:
+            uuid: 7d273f22-b805-440e-a20a-8341bf5cb5cb
+            region: content
+            configuration:
+              id: 'field_block:node:movie:body'
+              label: Review
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: above
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c9e0a0ce-e09c-4555-a472-c976b34ca3d6:
+            uuid: c9e0a0ce-e09c-4555-a472-c976b34ca3d6
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_tags'
+              label: Etiquetas
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.movie.default
 targetEntityType: node
 bundle: movie
@@ -84,6 +305,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_recomended_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_release_date:
     type: datetime_default

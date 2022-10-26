@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.movie.field_in_cinemas
     - field.field.node.movie.field_netflix
     - field.field.node.movie.field_plot
+    - field.field.node.movie.field_recomended_movies
     - field.field.node.movie.field_release_date
     - field.field.node.movie.field_reviews
     - field.field.node.movie.field_tags
@@ -79,6 +80,16 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_recomended_movies:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_release_date:

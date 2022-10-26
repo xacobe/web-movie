@@ -528,8 +528,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'siguiente ›'
-            previous: '‹ anterior'
+            next: 'next ›'
+            previous: '‹ previous'
             first: '« primero'
             last: 'último »'
           expose:

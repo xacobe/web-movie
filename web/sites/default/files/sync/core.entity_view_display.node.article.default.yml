@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_movies_sections
+    - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
   module:
@@ -57,6 +58,14 @@ content:
     third_party_settings: {  }
     weight: 111
     region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -64,3 +73,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

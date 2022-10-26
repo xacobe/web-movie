@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.movie.field_in_cinemas
     - field.field.node.movie.field_netflix
     - field.field.node.movie.field_plot
+    - field.field.node.movie.field_recomended_movies
     - field.field.node.movie.field_release_date
     - field.field.node.movie.field_reviews
     - field.field.node.movie.field_tags
@@ -42,6 +43,7 @@ hidden:
   field_in_cinemas: true
   field_netflix: true
   field_plot: true
+  field_recomended_movies: true
   field_release_date: true
   field_reviews: true
   field_tags: true
